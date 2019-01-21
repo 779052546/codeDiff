@@ -2,17 +2,17 @@
   <div class="page-index">      
 
         <Form ref="formCustom" :inline="true">
-            <FormItem prop="fontSize" style="width:200px">
+            <FormItem style="width:200px">
                 <Select v-model="fontSize" @on-change="changeFontSize()">
                     <Option v-for="item in fontSizeList" :value="item.value" :key="item.value">{{ item.label }}</Option>
                 </Select>
             </FormItem>
-            <FormItem prop="oldUrl" style="width:200px">
+            <FormItem style="width:200px">
                 <Select v-model="lang">
                     <Option v-for="item in langList" :value="item.value" :key="item.value">{{ item.label }}</Option>
                 </Select>
             </FormItem>
-            <FormItem prop="oldUrl" style="width:400px">
+            <FormItem style="width:400px">
                 <Input type="text" v-model="oldUrl"></Input>
             </FormItem>
              <FormItem>
